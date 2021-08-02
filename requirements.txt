@@ -1,0 +1,54 @@
+Requirements
+
+Hardware 
+
+•	RAM: 1GB or More
+•	Processor: Intel i3 and above
+•	Hard disk: 32 gb
+•	Internet Connection
+
+
+Software
+
+•	Operating System: Windows 7 & above
+•	Code Editing Software: Netbeans
+•	Local server for testing : Apache or Glassfish server
+•	Web browser for testing: Google Chrome or Mozilla Firefox
+•	For Database : Mysql server
+•	For Java Database Connectivity :- mysql-connector-java.bin.jar
+
+
+
+ Language Used
+
+•	For frontend :-Html,css,javascript
+•	For backend-Java
+
+
+
+
+
+
+Preparation and installation
+
+
+To Run this application :-
+
+
+•	Install  Jdk and setup environment path variables.
+
+•	Install Netbeans for code editor and mysql server with mysql workbench for backend.
+
+•	Open project on netbeans as a Java Web application.(Java EE plugin required for this )
+
+•	Add required libraries and jar files ( mysql-connector-java-bin.jar )  in project for java database Connectivity.
+
+•	Import  Database in mysql workbench for backend data.
+
+•	Add  Local server (Glassfish or Apache) for localhost .
+
+•	Choose a web browser for testing (Google chrome or Mozilla Firefox).
+
+
+
+
