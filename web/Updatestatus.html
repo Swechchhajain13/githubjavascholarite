@@ -1,0 +1,79 @@
+
+</html><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>  
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarite Application Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+    <form action="Updatestatus.jsp" method="Post">
+<center>
+<h2>Update Status</h2>
+</center>
+
+<h3 style="color:#5e281f"><i>Update Status</i></h3>
+
+<div class="container">
+    <label for="enrollment">Enrollment Number</label>
+    <input type="text" id="enrollment" name="enrollment" placeholder="Student Enrollment">
+    
+ <label for="scname">Scholarship Name</label>
+    <input type="text" id="scname" name="scname" placeholder="scname">
+    
+ <label for="status">Update Status</label>
+    <select id="status" name="status">
+      <option value="select">Select</option>
+     <option value="Approved">Approved</option>
+      <option value="Pending">Pending</option>
+      <option value="Rejected">Rejected</option>
+    </select>
+ <label for="Note">Note</label>
+    <input type="text" id="Note" name="note" placeholder="Note">
+<center>
+    <br>
+<input type="submit" value="Submit" onclick="alert('Updated Successfully')">
+                </div>">
+</center>
+  </form>
+</div>
+
+</body>
+</html>
