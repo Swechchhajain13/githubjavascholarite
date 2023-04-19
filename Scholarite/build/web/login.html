@@ -1,0 +1,269 @@
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head>  
+
+    <meta charset="UTF-8">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                <title> Scholarite</title>  
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+body {  
+background: #fcfcfd; 
+/* background-image: url("Loginpic_1.jpg");
+background-repeat: no-repeat,repeat; */
+
+}
+form {  
+
+width: 50%;  
+height:30%;
+opacity: 0.8;
+color:rgb(239, 245, 245);
+
+/* margin-right: 40pxpx ;  */
+margin-left: 30px; 
+margin-top: 50px;
+/* margin: 100px; */
+
+background:rgb(20, 30, 85);  
+
+padding: 25px 80px 80px 100px;  
+
+text-align: center;  
+
+-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+
+box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+
+}
+a{ 
+    /* text-decoration: none; */
+    color:rgb(227, 253, 253);
+   } 
+
+
+
+
+label {  
+
+display: block;  
+
+position: relative;  
+margin: 40px 0px; 
+}
+
+.form-myForm .checkbox {
+font-weight: 400;
+}
+.label-txt {  
+
+position: absolute;  
+
+top: -1.6em;  
+
+padding: 10px;  
+
+font-family: sans-serif;  
+
+font-size: .15em;  
+
+letter-spacing: 1px;  
+
+color: rgb(120,120,120);  
+
+transition: ease .3s; 
+
+}
+
+.input {  
+
+width: 100%;  
+
+padding: 10px;  
+
+background: transparent;  
+
+border: none;  
+
+outline: none; 
+
+}
+.line-box {  
+
+position: relative;  
+
+width: 100%;  
+
+height: 2px;  
+
+background: #f8f5f5; 
+
+}
+
+
+.line {  
+
+position: absolute;  
+
+width: 0%;  
+
+height: 2px;  
+
+top: 0px;  
+
+left: 50%;  
+
+transform: translateX(-50%);  
+
+background: #0b07fa;  
+
+transition: ease .6s; 
+
+}   
+
+
+.input:focus + .line-box .line {  
+
+ width: 100%; 
+
+}
+
+
+.label-active {  
+
+ top: -3em; 
+
+}
+
+
+button {  
+
+ display: inline-block; 
+
+ padding: 12px 24px;  
+
+ background: rgb(220,220,220);  
+
+ font-weight: bold;  
+
+ color: rgb(120,120,120);  
+
+ border: none;  outline: none;  
+
+ border-radius: 3px;  
+
+ cursor: pointer;  
+
+ transition: ease .3s; 
+
+}  
+
+
+button:hover {  
+
+background: #0b07fa;  
+
+color: #ffffff; 
+
+} 
+.combo {
+   padding: 0px;
+}
+.text-warning {
+  font-size: 25px;
+  font-style:inherit;
+}
+.logo img{
+     width: 100%; 
+     height: 25%;  
+  } 
+
+  .clm{
+    float: left;
+    width: 50%;
+   
+  }
+    </style>
+    <script type="text/javascript">
+        
+        function validate() {
+    
+       if( document.myForm.email.value == "" ) {
+          alert( "Please provide your Email ID!" );
+          document.myForm.email.focus() ;
+          return false;
+       }
+       if( document.myForm.password.value == "" ) {
+          alert( "Please provide your Password!" );
+          document.myForm.password.focus() ;
+          return false;
+       }
+       return( true);
+      }
+      </script>
+
+  </head>
+  <body>
+
+   <div class="row">
+
+      <div class="logo clm">
+        <img src="images/logo.jpg" alt="">
+      </div>
+
+      <div class="clm">   
+ 
+
+        <form action="Studentlogin.jsp" method="Post" name = "myForm" onsubmit = "return(validate());">   
+
+          <h4 class="text-warning" >Login </h4>  
+          
+          <label><b>User Type</b>
+          <select name="forma" onchange="location = this.value;">
+             <option value="login.html">Select...</option>
+             <option value="Admin.html">Admin</option>
+             <option value="login.html">Student</option>
+             <option value="Staff.html">Staff</option>
+          </select>
+        
+        
+          </label>
+          <label>     
+
+              <input type="text" class="input"  name="email" placeholder="Email ID"/>                   <div class="line-box">          
+
+              <div class="line"></div>        
+
+              </div>    
+
+          </label> 
+
+          <label>     
+
+            <input type="password" class="input" name="password" placeholder="PASSWORD"/>        
+
+            <div class="line-box">  <div class="line"></div>   </div>    
+
+          </label>  
+          <button type="submit">Login</button>  
+          <br><br>
+
+          <input type="checkbox" id="check">  <span>Remember me</span>    
+          <br><br>    
+          <a href="#" > Forgot Password</a> <br>  
+
+         <div class="d-flex justify-content-center links">
+            <br>
+          <font color="Black">Don't have an account? </font><a href="signup.html">Sign Up</a>
+        </div>
+        </form> 
+   </div>
+             
+   </body> 
+
+</html>

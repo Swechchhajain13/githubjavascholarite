@@ -1,0 +1,348 @@
+<!DOCTYPE html> 
+
+  <html lang="en"> 
+
+    <head>  
+
+      <meta charset="UTF-8">  
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">                <title> Scholarite</title>  
+
+      <link rel="stylesheet" href="css/login.css">  
+
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+      <style>
+        body {  
+        
+        background: #fcfcfd; 
+        /* background-image: url("images/img9.jpeg");
+        background-size: 100%;
+        background-repeat: no-repeat; */
+      
+      }
+      form {  
+      
+         width: 40%;  
+         height:30%;
+         opacity: 0.8;
+         color:rgb(239, 245, 245);
+      
+         margin-right: 360pxpx ; 
+         margin-left: 360px; 
+         margin-top: 50px;
+         margin-bottom: 50px;
+      
+         background:navy;  
+      
+         padding: 25px 80px 80px 100px;  
+      
+         text-align: center;  
+      
+         -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+      
+         box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+      
+      }
+        a{ 
+          /* text-decoration: none; */
+          color:rgb(227, 253, 253);
+         } 
+      
+      
+      
+      
+      label {  
+      
+      display: block;  
+      
+      position: relative;  
+      margin: 40px 0px; 
+      }
+      
+      .form-myForm .checkbox {
+        font-weight: 400;
+      }
+      .label-txt {  
+      
+       position: absolute;  
+      
+       top: -1.6em;  
+      
+       padding: 10px;  
+      
+       font-family: sans-serif;  
+      
+       font-size: .15em;  
+      
+       letter-spacing: 1px;  
+      
+       color: rgb(247, 240, 240);  
+      
+       transition: ease .3s; 
+      
+      }
+      
+      .input {  
+      
+       width: 100%;  
+      
+       padding: 10px;  
+      
+       background: transparent;  
+      
+       border: none;  
+      
+       outline: none; 
+      
+      }
+      .line-box {  
+      
+        position: relative;  
+      
+        width: 100%;  
+      
+        height: 2px;  
+      
+        background: #f8f5f5; 
+      
+      }
+      
+      
+       .line {  
+      
+         position: absolute;  
+      
+         width: 0%;  
+      
+         height: 2px;  
+      
+         top: 0px;  
+      
+         left: 50%;  
+      
+         transform: translateX(-50%);  
+      
+         background: #0b07fa;  
+      
+         transition: ease .6s; 
+      
+      }  
+      
+      
+       .input:focus + .line-box .line {  
+      
+         width: 100%; 
+      
+      }
+      
+      
+      .label-active {  
+      
+         top: -3em; 
+      
+      }
+      
+      
+       .button {  
+      
+         display: inline-block; 
+      
+         padding: 12px 24px;  
+      
+         background: rgb(220,220,220);  
+      
+         font-weight: bold;  
+      
+         color: rgb(120,120,120);  
+      
+         border: none;  outline: none;  
+      
+         border-radius: 3px;  
+      
+         cursor: pointer;  
+      
+         transition: ease .3s; 
+      
+      }  
+      
+      
+       .button:hover {  
+      
+         background: #0b07fa;  
+      
+         color: #ffffff; 
+      
+      } 
+      .combo {
+           padding: 0px;
+      }
+      .text-warning {
+          font-size: 25px;
+          font-style:inherit;
+        }
+
+    </style>    
+    
+
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <script type="text/javascript">
+          
+          function validate() {
+      
+         if( document.myForm.username.value == "" ) {
+            alert( "Please provide your Name!" );
+            document.myForm.username.focus() ;
+            return false;
+         }
+         if( document.myForm.email.value == "" ) {
+            alert( "Please provide your Email ID!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+         if( document.myForm.password.value == "" ) {
+            alert( "Please provide your Password!" );
+            document.myForm.password.focus() ;
+            return false;
+         }
+         if( document.myForm.enrollment.value == " " ) {
+            alert( "Please provide your Email ID!" );
+            document.myForm.enrollment.focus() ;
+            return false;
+         }
+         
+var p=document.myForm.password.value;
+var p1=document.myForm.confirm.value;
+if(p==p1){
+return true;
+}
+else{
+alert("password are not equal!");
+return false;
+}
+         
+            alert ( "Registered Successfully" );
+        
+         return( true);
+        }
+          
+        </script>
+    </head>
+
+    <body> 
+
+        <div>   
+
+            <form action="Signup.jsp" method="Post" name = "myForm" onsubmit = "return(validate());">    
+
+            <h4 class="text-warning text-center pt-5">Signup</h4>  
+            <label>     
+
+                <input type="text" class="input" name="username" placeholder="USERNAME"/>                   <div class="line-box">          
+  
+                <div class="line"></div>        
+  
+                </div>    
+
+            </label> 
+            <label>     
+
+                <input type="text" class="input" name="enrollment" placeholder="ENROLLMENT"/>                   <div class="line-box">          
+  
+                <div class="line"></div>        
+  
+                </div>    
+
+            </label> 
+            <label>     
+
+                <input type="text" class="input" name="branch" placeholder="BRANCH"/>                   <div class="line-box">          
+  
+                <div class="line"></div>        
+  
+                </div>    
+
+            </label> 
+            <label>     
+
+                <input type="text" class="input" name="current_year" placeholder="CURRENT YEAR"/>                   <div class="line-box">          
+  
+                <div class="line"></div>        
+  
+                </div>    
+
+            </label> 
+
+            <label>     
+
+                <input type="text" class="input" name="passing_year" placeholder="PASSING YEAR"/>                   <div class="line-box">          
+  
+                <div class="line"></div>        
+  
+                </div>    
+
+            </label> 
+         
+            <label>     
+
+              <input type="text" class="input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="EMAIL"/>                   <div class="line-box">          
+
+              <div class="line"></div>  
+              
+              </div> 
+            </label>
+
+            <label>     
+
+                <input type="number" class="input" name="contact_no" placeholder="CONTACT NUMBER"/>                    <div class="line-box">          
+  
+                <div class="line"></div>        
+  
+                </div> 
+            </label>   
+                
+                <label>     
+
+                    <input type="text" class="input" name="address" placeholder="ADDRESS"/>                   <div class="line-box">          
+      
+                    <div class="line"></div>        
+      
+                    </div>    
+    
+                </label> 
+
+                <label>     
+
+                    <input type="text" class="input" name="course" placeholder="COURSE"/>                             
+                      <div class="line-box">  <div class="line"></div>
+                         
+                    </div>    
+    
+                </label> 
+        
+           <label>     
+
+              <input type="password" class="input" name="password" placeholder="PASSWORD" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"/>        
+
+              <div class="line-box">  <div class="line"></div>   </div>    
+
+            </label>     
+            
+            <label>     
+
+              <input  type="password"  class="input"  name="confirm" placeholder="CONFIRM PASSWORD"/>      
+
+              <div class="line-box"> <div class="line"></div> </div>    
+
+            </label> 
+
+            <input type="submit" value="Submit" class="button">
+
+         </form> 
+
+      </div> 
+
+    </body> 
+
+</html>

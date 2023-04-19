@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>  
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarite Application Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+    <form action="Application.jsp" method="Post">
+<center>
+<h2>Application Form</h2>
+</center>
+
+<div class="container">
+    <label for="schname">Scholarship Name</label>
+    <input type="text" id="schname" name="schname" placeholder="Scholarship name">
+    <div class="container">
+<h3 style="color:#5e281f"><i>Personal Information</i></h3>
+    <label for="fname">Name</label>
+    <input type="text" id="stuname" name="stuname" placeholder="Your name..">
+    
+ <label for="email">Email Id</label>
+    <input type="text" id="stuemail" name="stuemail" placeholder="Email Id">
+    <label for="contact no">Contact Number</label>
+     <input type="text" id="stucontact" name="stucontact" placeholder="Contact Number">
+ <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="select">Select</option>
+     <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+<label for="category">Category</label>
+    <select id="category" name="category">
+      <option value="select">Select</option>
+     <option value="general">General</option>
+      <option value="OBC">OBC</option>
+      <option value="SC">SC</option>
+       <option value="ST">ST</option>
+      <option value="other reservation">Other Reservation</option>
+    </select>
+<label for="physically challenged">Physically Challenged?</label>
+<select id="phsy" name="phsy">
+      <option value="select">Select</option>
+     <option value="yes">Yes</option>
+      <option value="no">No</option>
+       </select>
+<label for="relegion">Religion</label>
+    <select id="religion" name="religion">
+      <option value="select">Select</option>
+     <option value="buddhism">Buddhism</option>
+      <option value="christian">Christain</option>
+      <option value="hindu">Hindu</option>
+     <option value="jain">Jain</option>
+      <option value="parsi">Parsi</option>
+      <option value="sikh">Sikh</option>
+      <option value="muslim">Muslim</option>
+       </select>
+         
+     <label for="aadhar">Aadhar Card</label>
+     <input type="text" id="aadhar" name="aadhar" placeholder="Aadhar Card">
+
+<label for="permanent address">Permanent Address</label>
+    <input type="text" id="address" name="Address" placeholder="Address Line">
+    
+<label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="select">Select</option>
+      <option value="india">India</option>
+      <option value="other">Other</option>
+      </select>
+ <label for="state">States</label>
+<select name="state" id="state">
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+<label for="pincode">Pincode</label>
+     <input type="text" id="pincode" name="pincode" placeholder="Pincode">
+ <h3 style="color:#5e281f"><b><i>Education Details</i></b></h3> 
+<h4 style="color:#662065;"><u>Class 12th Academic Details</u></h4>
+ <label for="board">Board</label>
+    <select id="bboard" name="bboard">
+      <option value="select">Select</option>
+      <option value="cbse">CBSE</option>
+      <option value="state board">State Board</option>
+      </select>
+      
+      <label for="institute name">School Name</label>
+     <input type="text" id="bschname" name="bschname"
+  placeholder="School Name">
+ 
+
+
+  <label for="passing year"> Passing Year</label>
+      <select id="bpyear" name="bpyear">
+      <option value="select">Select</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+     <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>      
+      <option value="2016">2016</option>       
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+       <option value="2019">2019</option>
+       <option value="2020">2020</option>
+       <option value="2021">2021</option>
+      </select>
+      
+
+<label for="cgpa">CGPA</label>
+     <input type="text" id="bcgpa" name="bcgpa" placeholder="CGPA">
+ <h4 style="color:#662065;"><u>Graduation Academics</u></h4>
+ <label for="Degree">Degree</label>
+  <input type="text" id="Degree" name="degree" placeholder="degree">
+  <label for="Stream">Stream</label>
+  <input type="text" id="Stream" name="stream" placeholder="stream">
+    <label for="institue name">Institute Name</label>
+     <input type="text" id="iname" name="iname" placeholder="Institute Name">
+       <label for="Annual Fees">Annual Fees</label>
+     <input type="text" id="afee" name="afee" placeholder="Annual Fees">
+     <h3 style="color:#5e281f"><b><i >Family Details</b></i></h3>
+
+
+ <h4 style="color:#662065;"><u>Father's Details</u></h4>
+<label for="Father's Name">Father's Name</label>
+     <input type="text" id="fname" name="fname" placeholder="fname">
+
+<label for="Annual Income">Annual Income</label>
+<input type="text" id="income" name="income" placeholder="Annual Income">
+<label for="Occupation">Occupation</label>
+<input type="text" id="occupation" name="occupation" placeholder="Occupation">
+ 
+<h3 style="color:#5e281f"><b><i>Bank Details</i></b></h3> 
+<label for="Account Holder Name">Account Holder Name</label>
+<input type="text" id="aname" name="aname" placeholder="Account Holder Name">
+<label for="Account Number">Account Number</label>
+<input type="text" id="anumber" name="anumber" placeholder="Account Number">
+<label for="IFSC Code">IFSC Code</label>
+<input type="text" id="icode" name="icode" placeholder="IFSC Code">
+<label for="Bank Name">Bank Name</label>
+<input type="text" id="bankname" name="bankname" placeholder="Bank Name">
+<h3 style="color:#5e281f"><b><i>Documents Upload(in pdf)</i></b></h3> 
+<h4>Submit the pdf file of all the required documents mentioned in description</h4>
+<input type="file" id="file" name="file">
+
+<center>
+    <br>
+    <input type="submit" value="Submit" onclick="alert('Applied Successfully')">
+</center>
+  </form>
+</div>
+
+</body>
+</html>
